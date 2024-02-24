@@ -43,6 +43,7 @@ public class LoginPage extends AbstractClass{
 		userPass.sendKeys(pass);
 		loginButton.click();
 		visibilityOfElement(error);
+		System.out.println(error.getText());
 		return error.getText();
 	}
 }
