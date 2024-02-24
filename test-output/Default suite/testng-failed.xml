@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="shoppingFramework.ShoppingErrorValidations">
+      <class name="shoppingFramework.ShoppingApplicationJsonData">
         <methods>
           <include name="getApplication"/>
           <include name="closeBrowse"/>
-          <include name="errorValidation" invocation-numbers="0 1"/>
+          <include name="processApplication"/>
         </methods>
-      </class> <!-- shoppingFramework.ShoppingErrorValidations -->
+      </class> <!-- shoppingFramework.ShoppingApplicationJsonData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

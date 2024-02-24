@@ -46,15 +46,15 @@ public class BaseTest {
 			if(browserName.contains("headless")) {
 				options.addArguments("headless");
 			}
-			WebDriverManager.chromedriver().setup();
+//			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 			driver.manage().window().setSize(new Dimension(1440, 900));
 		}
 		else if (browserName.equalsIgnoreCase("edge")) {
-			WebDriverManager.edgedriver().setup();
+//			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}else if(browserName.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
+//			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 		
